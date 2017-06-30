@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8">
+   <meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″> 
+   <title>Login</title>
+   <link href="{{static_url('bootstrapL/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/small2.css')}}" media="screen and (max-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/big2.css')}}" media="screen and (min-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.css')}}" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="{{static_url('jQueryL/jquery-3.1.1.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('bootstrapL/js/bootstrap.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('Javascript/index2.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.min.js')}}"></script>
+</head>
+<body>
+   <div id="father1">
+    <header>
+         <div>
+         <span class="glyphicon glyphicon-send"></span>
+         <span>大堡礁采购</span>
+         </div>
+    </header>
+    <article>
+    <div id="articleson">
+         <div id="formfather">
+             <div id="logo">
+              <span>用户名:</span><br>
+              <span>手机号:</span><br>
+              <span>密&nbsp;码:</span>
+             </div>
+            <form method="post" action="/login">
+                {% raw xsrf_form_html() %}
+            <input type="text" id="user1" name="user1" value="" minlength="6" maxlength="20" autocomplete="off" onkeyup="value=value.replace(/[^\w\u4E00-\u9FA5]/g, '')" required="required" />
+            <input type="text" id="phone1"  name="phone1" value="" required="required"  autocomplete="off" minlength="11" onkeyup="value=value.replace(/\D/g,'')"/>
+             <input type="password" id="pwd2" name="pwd2"  value="" minlength="6" maxlength="10" autocomplete="off"  required="required"/>
+
+             <button class="btn btn-sm btn-primary btn-block" type="submit">登&nbsp;陆</button>
+
+            </form>
+         </div>
+         <div id="question" >
+             <br>
+             <br>
+           <span>还没有账号?<a href="/regist">免费注册</a></span>
+          
+         </div>
+      </div>
+    </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8">
+   <meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″> 
+   <title>register</title>
+   <link href="{{static_url('bootstrapL/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/small5.css')}}" media="screen and (max-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/big5.css')}}" media="screen and (min-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.css')}}" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="{{static_url('jQueryL/jquery-3.1.1.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('bootstrapL/js/bootstrap.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('Javascript/index5.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('jQueryC/jQuery boxShadow/jQuery.animate-shadow-min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.min.js')}}"></script>
+</head>
+<body>
+    <header>
+       <div>
+          <span class="glyphicon glyphicon-send"></span>
+          <span class="sp">大堡礁采购</span>
+          <span class="sp color">|</span>
+          <span class="sp lastChild">商家入驻</span>
+       </div>
+    </header>
+    <div id="article">
+        <div id="head">入驻</div>
+        <form method="post" action="">
+         <input type="text" id="user" name="user" value="" placeholder="账号,5-20位数字、字母或下划线"  required="required" minlength="5" maxlength="20" onkeyup="this.value=this.value.replace(/[^\w_]/g,'');" />
+         <div class="one"><span class="glyphicon glyphicon-remove-circle"></span><span>用户名不能为空</span></div>
+         <div class="two"><span class="glyphicon glyphicon-remove-circle"></span><span>请输入合法用户名</span></div>
+         <input type="password" id="pwd" name="pwd"  value="" placeholder="密码,6-16位,必须包含数字和字母" required="required" minlength="6" maxlength="16" onkeyup="value=value.replace(/[/W]/g,'');"/>
+          <div class="three"><span class="glyphicon glyphicon-remove-circle"></span><span>密码不能为空</span></div>
+         <div class="four"><span class="glyphicon glyphicon-remove-circle"></span><span>请输入合法密码</span></div>
+         <input type="password" id="pwd1" name="pwd1" value="" placeholder="再次填写上面的密码" required="required" minlength="6" maxlength="16" onkeyup="value=value.replace(/[/W]/g,'');"/>
+         <div class="five"><span class="glyphicon glyphicon-remove-circle"></span><span>两次密码前后输入不一致</span></div>
+         <input type="number" id="num" name="num" value=""  placeholder="手机号码" minlength="11" required="required" />
+          <div class="six"><span class="glyphicon glyphicon-remove-circle"></span><span>手机号不能为空</span></div>
+         <div class="seven"><span class="glyphicon glyphicon-remove-circle"></span><span>请输入合法手机号</span></div>
+         <input type="submit" id="sbm" name="sbm" value="注册" />
+        </form>
+    </div>
+</body>
+</html>

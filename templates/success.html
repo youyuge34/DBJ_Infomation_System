@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单成功！</title>
+        <script type="text/javascript">
+        onload=function(){
+            setInterval(go, 1000);
+        };
+        var x=3; //利用了全局变量来执行
+        function go(){
+        x--;
+            if(x>0){
+            document.getElementById("sp").innerHTML=x;
+            }else{
+            location.href='/';
+            }
+        }
+    </script>
+    <style>
+   body{text-align:center}
+   </style>
+</head>
+<body>
+<h1>下单成功！供应商已接到采购信息</h1>
+</body>
+</html>

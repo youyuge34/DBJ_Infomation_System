@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8">
+   <meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″> 
+   <title>register</title>
+   <link href="{{static_url('bootstrapL/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/small1.css')}}" media="screen and (max-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('CSS/big1.css')}}" media="screen and (min-width: 785px)" rel="stylesheet" type="text/css" />
+   <link href="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.css')}}" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="{{static_url('jQueryL/jquery-3.1.1.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('bootstrapL/js/bootstrap.min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('Javascript/index1.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('jQueryC/jQuery boxShadow/jQuery.animate-shadow-min.js')}}"></script>
+   <script type="text/javascript" src="{{static_url('jQueryC/responsive-nav.js-master/responsive-nav.min.js')}}"></script>
+</head>
+<body>
+    <div id="father">
+    <header>
+         <div>
+         <span class="glyphicon glyphicon-send"></span>
+         <span>大堡礁采购系统</span>
+         </div>
+    </header>
+    <div id="article">
+    <div id="articleson">
+        <div id="logo">
+          <button type="button" class="btn btn-default btn-lg">
+         <span class="glyphicon glyphicon-user"></span>
+            User
+         </button>
+         <button type="button" class="btn btn-default btn-lg">
+         <span class="glyphicon glyphicon-phone"></span>
+     Phone
+</button>
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-lock"></span>
+    Password
+</button>
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-lock"></span>
+    Confirm Password
+</button>
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-map-marker"></span>
+    Address
+</button> 
+        </div>
+        <div id="okinput">
+            <form id='myform' method="POST" action="/">
+                {% raw xsrf_form_html() %}
+             <input type="text" id="user" class="inpt" name="user"  autocomplete="off" value="" minlength="6" maxlength="20" onkeyup="value=value.replace(/[^\w\u4E00-\u9FA5]/g, '')" required="required"/>
+           
+             <input type="text" id="phone" class="inpt" name="phone" value="" required="required"  minlength="11" autocomplete="off" onkeyup="value=value.replace(/\D/g,'')"/>
+             <input type="password" id="pwd" name="pwd" class="inpt" value="" minlength="6" maxlength="10"  autocomplete="off" required="required"/>
+             <input type="password" id="pwd1" name="pwd1" value="" class="inpt" minlength="6" maxlength="10"  autocomplete="off"  required="required"/>
+             <textarea rows="5" cols="37" name="adr" id="txt" class="inpt" autocomplete="off" required="required"></textarea>
+             <input type="submit" value="提交" id="sbm" name="sbm"/>
+             <input type="reset" value="重置" id="res" name="res"/>
+            </form>
+            {{m}}
+        </div>
+        <div id="judge">
+            <div id="judge1">
+           <span class="glyphicon glyphicon-ok-circle" ></span>
+           <span class="glyphicon glyphicon-remove-circle"></span>
+           <span class="glyphicon glyphicon-record" ></span>
+           </div>
+             <div id="judge2">
+           <span class="glyphicon glyphicon-ok-circle"></span>
+           <span class="glyphicon glyphicon-remove-circle"></span>
+           <span class="glyphicon glyphicon-record"></span>
+           </div>
+             <div id="judge3">
+           <span class="glyphicon glyphicon-ok-circle"></span>
+           <span class="glyphicon glyphicon-remove-circle"></span>
+           <span class="glyphicon glyphicon-record"></span>
+           </div>
+             <div id="judge4">
+           <span class="glyphicon glyphicon-ok-circle"></span>
+           <span class="glyphicon glyphicon-remove-circle"></span>
+           <span class="glyphicon glyphicon-record"></span>
+           </div>
+             <div id="judge5">
+           <span class="glyphicon glyphicon-ok-circle"></span>
+           <span class="glyphicon glyphicon-remove-circle"></span>
+           <span class="glyphicon glyphicon-record"></span>
+           </div>
+        </div>
+        <div id="warn">
+           <div id="warn1">
+           <span>Please input an legal username!</span>
+           <span>Content cannot be empty!</span>
+           </div>
+           <div id="warn2">
+           <span>Please input an legal mobile phone number!</span>
+           <span>Content cannot be empty!</span>
+           </div>
+           <div id="warn3">
+           <span>Please input an legal password!</span>
+           <span>Content cannot be empty!</span>
+           </div>
+           <div id="warn4">
+
+           <span>Two input passwords are inconsistent!</span>
+
+           <span>Content cannot be empty!</span>
+           </div>
+           <div id="warn5">
+             <span>Content cannot be empty!</span>
+           </div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+</body>  
+</html>
