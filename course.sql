@@ -39,7 +39,10 @@ CREATE TABLE `commodity` (
 
 LOCK TABLES `commodity` WRITE;
 /*!40000 ALTER TABLE `commodity` DISABLE KEYS */;
-INSERT INTO `commodity` VALUES (1,'鱼香肉丝套餐',30,1,'IMG/1-1.jpg',3),(2,'腌笃鲜套餐',35,1,'IMG/1-2.jpg',1),(3,'鱼肉狮子头套餐',31,1,'IMG/1-3.jpg',3),(4,'毛豆辣子鸡套餐',34,1,'IMG/1-4.jpg',2);
+INSERT INTO `commodity` VALUES (1,'陨蹄铁',30,1,'IMG/clevis.jpg',3),(2,'齿轮',35,1,'IMG/gear.jpg',1),(3,'煤油灯',31,1,'IMG/lamp.jpg',3),(4,'芙芙的狗粮配方',34,1,'IMG/paper.jpg',2),(5,'石榴果汁',39,1,'IMG/potion.jpg',2),(6,'占卜球',53,1,'IMG/snake.jpg',1);
+INSERT INTO `commodity` VALUES (201,'陨蹄铁ex',300,2,'IMG/clevis.jpg',3);
+INSERT INTO `commodity` VALUES (301,'陨蹄铁ssr',999,3,'IMG/clevis.jpg',3);
+INSERT INTO `commodity` VALUES (401,'+1s',1,4,'IMG/xys.jpg',3);
 /*!40000 ALTER TABLE `commodity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,7 +69,7 @@ CREATE TABLE `merchant` (
 
 LOCK TABLES `merchant` WRITE;
 /*!40000 ALTER TABLE `merchant` DISABLE KEYS */;
-INSERT INTO `merchant` VALUES (1,251,'IMG/1.jpg','冒牌火锅菜（南邮店）',1),(2,0,'IMG/2.jpg','咖喱之味',3),(3,0,'IMG/3.JPG','扬铭宇黄焖鸡米饭',NULL),(4,0,'IMG/4.jpg','如家外卖',NULL);
+INSERT INTO `merchant` VALUES (1,251,'IMG/njupt.jpg','加勒底（南邮分部）',1),(2,0,'IMG/house.jpg','蒙娜丽莎工坊',3),(3,0,'IMG/ygf.jpg','杨国福原料店',NULL),(4,0,'IMG/sjsr.jpg','时间旅行商',NULL);
 /*!40000 ALTER TABLE `merchant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -121,7 +124,7 @@ CREATE TABLE `userlist` (
 
 LOCK TABLES `userlist` WRITE;
 /*!40000 ALTER TABLE `userlist` DISABLE KEYS */;
-INSERT INTO `userlist` VALUES (1,'test123','15851811286','25f9e794323b453885f5181f1b624d0b','南京邮电大学兰苑',141),(2,'小王','13398077534','thisisnotmd5','南京邮电大学荷苑',10),(3,'wangxiaoming','15851811286','25f9e794323b453885f5181f1b624d0b','南京邮电大学仙林校区菊苑',100);
+INSERT INTO `userlist` VALUES (1,'test123','15851811286','25f9e794323b453885f5181f1b624d0b','南京邮电大学兰苑',141),(2,'youyuge','18362933375','4297f44b13955235245b2497399d7a93','111',0),(3,'wangxiaoming','15851811286','25f9e794323b453885f5181f1b624d0b','南京邮电大学仙林校区菊苑',100);
 /*!40000 ALTER TABLE `userlist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

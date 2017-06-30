@@ -25,13 +25,18 @@
            <div id="headtopright">
                  <ul>
                    <li><a href="/regist">注册</a></li>
-                   <li>|</li>
+                   <li>&nbsp;|&nbsp;</li>
                      {% if f==None %}
                    <li><a href="/login">登陆</a></li>
                      {% else %}
                      <li><a href="/self">欢迎您,{{f}}</a></li>
+                     <li>&nbsp;|&nbsp;</li>
                      <li><a href="/logout">&nbsp;退出登陆</a></li>
                      {% end %}
+                    <li>&nbsp;|&nbsp;</li>
+                    <a href="https://github.com/youyuge34" target="_blank">
+                     <span class="glyphicon glyphicon-link" style="color: rgb(22, 25, 59); font-size: 12px;">尤晟的Github</span>
+                     </a>
                  </ul>
            </div>
            </div>
@@ -42,16 +47,19 @@
              <div class="glyphicon glyphicon-send" id="logo"></div>
              <div id="logo1">
               <div id="logo2">大堡礁</div>
-              <div id="logo3">大堡礁采购系统</div>
+              <div id="logo3">FGO商店采购系统</div>
              </div>
             </div>
             <div id="headfootright">
                   <ul>
                      <li><a href="/">首页</a></li>
                      <li>|</li>
-                     <li><a href="/shopcart">购物车</a></li>
+                     <li><a href="/shopcart">购物车
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                     </li>
                      <li>|</li>
-                     <li><a href="/addmerchant">商家入驻加盟</a></li>
+                     <li><a href="/addmerchant">供应商入驻加盟</a></li>
                   </ul>
             </div>
             </div>
